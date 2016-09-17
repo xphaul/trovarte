@@ -13,7 +13,7 @@ import { Page2 } from './pages/page2/page2';
 class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Dashboard;
+  rootPage: any = Login;
 
   pages: Array<{title: string, component: any}>;
 
