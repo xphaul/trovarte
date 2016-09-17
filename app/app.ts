@@ -4,6 +4,7 @@ import { StatusBar } from 'ionic-native';
 
 import { Maps } from './pages/maps/maps';
 import { Login } from './pages/login/login';
+import { Dashboard } from './pages/dashboard/dashboard';
 import { Page2 } from './pages/page2/page2';
 
 @Component({
@@ -12,7 +13,7 @@ import { Page2 } from './pages/page2/page2';
 class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Maps;
+  rootPage: any = Dashboard;
 
   pages: Array<{title: string, component: any}>;
 
