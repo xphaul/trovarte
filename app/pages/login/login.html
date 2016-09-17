@@ -1,35 +1,36 @@
 <ion-header>
   <ion-navbar>
-    <button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>login</ion-title>
+    <ion-title>Login</ion-title>
   </ion-navbar>
 </ion-header>
 
 
-<ion-content>
+<ion-content class="login background">
+  <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; background-color: rgba(39, 26, 26, 0.47)">
+  </div>
+  <div style="padding: 30px">
+    <ion-item style="padding-left: 0; background: transparent">
+      <ion-label floating style="color: white">Username</ion-label>
+      <ion-input type="text" secondary></ion-input>
+    </ion-item>
 
-  <ion-item>
-   <ion-label fixed>Username</ion-label>
-   <ion-input type="text" value=""></ion-input>
- </ion-item>
+    <ion-item style="padding-left: 0; background: transparent">
+      <ion-label floating style="color: white">Password</ion-label>
+      <ion-input type="password" primary></ion-input>
+    </ion-item>
 
- <ion-item>
-   <ion-label fixed>Password</ion-label>
-   <ion-input type="password"></ion-input>
- </ion-item>
-
- <ion-list>
-  <ion-item>
-    <ion-label>User Type</ion-label>
-    <ion-select [(ngModel)]="gaming">
-      <ion-option value="nes">User</ion-option>
-      <ion-option value="n64">Store Owner</ion-option>
-      <ion-option value="ps">Admin</ion-option>
-      <ion-option value="genesis">Super Admin</ion-option>
-    </ion-select>
-  </ion-item>
-</ion-list>
-
+    <ion-item style="padding-left: 0; margin-top: 25px; background: transparent">
+      <ion-label style="color: white">Type</ion-label>
+      <ion-select [(ngModel)]="gaming">
+        <ion-option value="nes" style="color: white">User</ion-option>
+        <ion-option value="n64" style="color: white">Store Owner</ion-option>
+        <ion-option value="ps" style="color: white">Admin</ion-option>
+        <ion-option value="genesis" style="color: white">Super Admin</ion-option>
+      </ion-select>
+    </ion-item>
+  </div>
 </ion-content>
+
+<ion-footer>
+  <button block large style="margin: 0; border-radius: 0">Login</button>
+</ion-footer>
