@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-item>
+   <ion-label fixed>Username</ion-label>
+   <ion-input type="text" value=""></ion-input>
+ </ion-item>
+
+ <ion-item>
+   <ion-label fixed>Password</ion-label>
+   <ion-input type="password"></ion-input>
+ </ion-item>
+
+ <ion-list>
+  <ion-item>
+    <ion-label>User Type</ion-label>
+    <ion-select [(ngModel)]="gaming">
+      <ion-option value="nes">User</ion-option>
+      <ion-option value="n64">Store Owner</ion-option>
+      <ion-option value="ps">Admin</ion-option>
+      <ion-option value="genesis">Super Admin</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+</ion-content>

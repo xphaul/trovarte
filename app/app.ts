@@ -3,6 +3,7 @@ import { ionicBootstrap, Platform, Nav } from 'ionic-angular';
 import { StatusBar } from 'ionic-native';
 
 import { Maps } from './pages/maps/maps';
+import { Login } from './pages/login/login';
 import { Page2 } from './pages/page2/page2';
 
 @Component({
