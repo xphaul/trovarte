@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Sign Up</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Are you a:</ion-label>
+      <ion-select [(ngModel)]="stakeholders">
+        <ion-option value="shopper">Shopper</ion-option>
+        <ion-option value="storeOwner">Store Owner</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+</ion-content>
