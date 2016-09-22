@@ -6,6 +6,9 @@ import { Maps } from './pages/maps/maps';
 import { Login } from './pages/login/login';
 import { Dashboard } from './pages/dashboard/dashboard';
 import { Page2 } from './pages/page2/page2';
+import { Signup } from './pages/signup/signup';
+import { SignupShopper} from './pages/signupShopper/signupShopper';
+import { SignupStoreOwner} from './pages/signupStoreOwner/signupStoreOwner';
 
 @Component({
   templateUrl: 'build/app.html'
@@ -13,7 +16,7 @@ import { Page2 } from './pages/page2/page2';
 class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Login;
+  rootPage: any = SignupStoreOwner;
 
   pages: Array<{title: string, component: any}>;
 
