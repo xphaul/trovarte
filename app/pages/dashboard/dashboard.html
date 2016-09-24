@@ -1,19 +1,68 @@
-<ion-header>
-  <!-- <ion-navbar>
-    <button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>login</ion-title>
-  </ion-navbar> -->
-</ion-header>
-
-
 <ion-content>
 
-dashboard
+	<ion-slides pager [options]="mySlideOptions">
+
+  	<ion-slide style="background-color: #fff">
+     
+     	<h2>TROVARTE</h2>
+  	</ion-slide>
+
+  	<ion-slide style="background-color: #81D4FA">
+  		<div id="slider2bg">
+  		<p>Search for art store nearby the user’s current place</p>
+  		
+  		<div style="background: rgba(39, 62, 84, 0.43);
+    	position: absolute;
+    	height: 100%;
+    	z-index: 2;
+    	top: 0;
+    	left: 0;
+    	bottom: 0;
+    	right: 0;"></div>
+  		
+  		<img src="img/books.jpg"/>
+  		</div>
+     </ion-slide>
+
+  	<ion-slide style="background-color: #EF9A9A">
+  		<div id="slider3bg">
+  		<img src="img/brush.jpg"/>
+  		</div>
+  	</ion-slide>
+
+    <ion-slide style="background-color: #EF9A9A">
+  		<div id="slider4bg">
+  		<img src="img/paint.jpg"/>
+  		</div>
+  	</ion-slide>
+
+	</ion-slides>
 
 </ion-content>
 
+
 <ion-footer>
 
+	<ion-grid no-padding>
+
+  	<ion-row>
+   
+    <ion-col width-50 no-padding>
+	    <button primary block large (click)="goToLogIn()" class="buttons">
+		  <ion-icon name="ios-contact-outline"></ion-icon>
+		  LOGIN
+		</button>
+	</ion-col>
+
+    <ion-col width-50 no-padding>
+		<button primary block large class="buttons">
+		  <ion-icon name="ios-create-outline"></ion-icon>
+		  SIGNUP
+		</button>
+	</ion-col>
+
+  </ion-row>
+
+</ion-grid>
+	
 </ion-footer>
