@@ -1,36 +1,78 @@
 <ion-header>
+  
   <ion-navbar>
     <ion-title>Login</ion-title>
   </ion-navbar>
+
 </ion-header>
 
 
+    <div id="logo">
+    <img src="img/logo.jpg"/>
+    </div>
+
+
 <ion-content class="login background">
-  <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; background-color: rgba(39, 26, 26, 0.47)">
+
+  
+  <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; background-color: white">
   </div>
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
   <div style="padding: 30px">
+    
     <ion-item style="padding-left: 0; background: transparent">
-      <ion-label floating style="color: white">Username</ion-label>
-      <ion-input type="text" secondary></ion-input>
+        <ion-label style="color: #9E9E9E"><ion-icon name = "ios-person"></ion-icon></ion-label>
+        <ion-input type="text" placeholder ="Username"></ion-input>
     </ion-item>
 
+
     <ion-item style="padding-left: 0; background: transparent">
-      <ion-label floating style="color: white">Password</ion-label>
-      <ion-input type="password" primary></ion-input>
+        <ion-label style="color: #9E9E9E"><ion-icon name = "ios-lock"></ion-icon></ion-label>
+        <ion-input type="password" placeholder ="Password"></ion-input>
     </ion-item>
 
-    <ion-item style="padding-left: 0; margin-top: 25px; background: transparent">
-      <ion-label style="color: white">Type</ion-label>
-      <ion-select [(ngModel)]="gaming">
-        <ion-option value="nes" style="color: white">User</ion-option>
-        <ion-option value="n64" style="color: white">Store Owner</ion-option>
-        <ion-option value="ps" style="color: white">Admin</ion-option>
-        <ion-option value="genesis" style="color: white">Super Admin</ion-option>
-      </ion-select>
+    <ion-item style="padding-left: 0; margin-top: 15px; background: transparent">
+        <ion-label style="color: #9E9E9E"><ion-icon name = "ios-filing"></ion-icon></ion-label>
+        <ion-input placeholder ="Type"></ion-input>
+
+        <ion-select [(ngModel)] = "Type">
+          <ion-option value = "user" style = "color: #9E9E9E">User</ion-option>
+          <ion-option value="owner" style="color: #9E9E9E">Owner</ion-option>
+
+        </ion-select>
+
     </ion-item>
+
+    <button block style="margin-top: 25px; border-radius: 0;">Log in</button>
+      
+      
+        <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #9E9E9E"> Don't have an account?<button ion-button color="secondary" inline clear>Register Now!</button></ion-label></ion-item>
+    
   </div>
+
 </ion-content>
 
 <ion-footer>
-  <button block large style="margin: 0; border-radius: 0">Login</button>
+<div class="bar bar-footer">
+  <div style="padding: 10px">
+  <div class="title"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; TROVARTE 2016</div>
+</div>
+</div>
+
 </ion-footer>
