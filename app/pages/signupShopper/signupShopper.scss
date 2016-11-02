@@ -1,15 +1,22 @@
-.SignUpShopper{
-  .background {
-    background-image: url('https://s-media-cache-ak0.pinimg.com/564x/34/07/46/3407461fc55921a63dc599f6ee916ecf.jpg');
-    background-size: cover;
+.signupShopper{
+
+	#logo {
+	background-image: url('../img/logo.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	width: 150px;
+	height: 150px;
+	margin-top: 50px;
+	margin-left: 100px;
+	z-index: 2;
+	position: relative;
+	}
+
+	h2 {
+		font-family: 15px;
+		font-family: 'Amita', cursive;
+
+	}
+
   }
-}
-
-h2 {
-    font-size: 20px;
-    font-family: 'Rock Salt', cursive;
-    color: #4CAF50;
- 
-   
-
-}

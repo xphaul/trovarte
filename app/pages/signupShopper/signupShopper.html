@@ -1,65 +1,102 @@
 <ion-header>
+  
   <ion-navbar>
-    <ion-title><h2>Sign Up- Shopper</h2></ion-title>
+    <ion-title>SignUp Shopper</ion-title>
   </ion-navbar>
+
 </ion-header>
 
-<ion-content>
-  <ion-list>
+<ion-content class="login background">
 
-  <ion-item>
-    <ion-label floating>First Name</ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
+  
+  <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; background-color: white">
+  </div>
 
-  <ion-item>
-    <ion-label floating>Last Name</ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label>Birthday</ion-label>
-    <ion-input type="date"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label>Gender</ion-label>
-    <ion-select [(ngModel)]="shopperGender">
-      <ion-option value="shopperFemale">Female</ion-option>
-      <ion-option value="shopperMale">Male</ion-option>
-    </ion-select>
-  </ion-item>
-
-  <ion-item>
-    <ion-label floating>Email Address</ion-label>
-    <ion-input type="email"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label floating>Phone Number</ion-label>
-    <ion-input type="number"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label floating>Username</ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label floating>Password</ion-label>
-    <ion-input type="password"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label floating>Retype Password</ion-label>
-    <ion-input type="password"></ion-input>
-  </ion-item>
-
-</ion-list>
+  
+  <div style="padding: 30px">
+    
+    <!-- Basic Information -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #ggg"><ion-icon name = "ios-person">&nbsp; &nbsp;Basic Information</ion-icon></ion-label>
+    </ion-item>
 
 
-  <button full>Register</button>
+    <!-- First Name -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #9E9E9E"></ion-label>
+        <ion-input type="text" placeholder ="First Name"></ion-input>
+    </ion-item>
+
+    <!--Last Name -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #9E9E9E"></ion-label>
+        <ion-input type="password" placeholder ="Last Name"></ion-input>
+    </ion-item>
+
+    <!--Birthday -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #9E9E9E"></ion-label>
+        <ion-input type="date" placeholder ="Birthday"></ion-input>
+    </ion-item>
+
+    <!-- Gender -->
+    <ion-item style="padding-left: 0; margin-top: 15px; background: transparent">
+        <ion-label style="color: #9E9E9E"></ion-label>
+        <ion-input placeholder ="Gender"></ion-input>
+
+        <ion-select [(ngModel)] = "Type">
+          <ion-option value = "user" style = "color: #9E9E9E">Female</ion-option>
+          <ion-option value="owner" style="color: #9E9E9E">Male</ion-option>
+
+        </ion-select>
+    </ion-item>
+
+    <!--Email -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #9E9E9E"></ion-label>
+        <ion-input type="email" placeholder ="E-mail"></ion-input>
+    </ion-item>
+
+    <!--Phone number -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #9E9E9E"></ion-label>
+        <ion-input type="number" placeholder ="Phone"></ion-input>
+    </ion-item>
+
+    <br>
+
+    <!-- Account Information -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #ggg"><ion-icon name = "ios-contact">&nbsp; &nbsp;Account Information</ion-icon></ion-label>
+    </ion-item>
+
+   
+    <!-- Username -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #9E9E9E"></ion-label>
+        <ion-input type="text" placeholder ="Username"></ion-input>
+    </ion-item>
+
+    <!-- Password -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #9E9E9E"></ion-label>
+        <ion-input type="password" placeholder ="Password"></ion-input>
+    </ion-item>
+
+    <!-- Retype Password -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #9E9E9E"></ion-label>
+        <ion-input type="password" placeholder ="Re-Password"></ion-input>
+    </ion-item>
+
+    <button block style="margin-top: 25px; border-radius: 0;">Register</button>
 
 
-
+  </div>
 </ion-content>
+
+
+<ion-footer>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Trovarte Mobile App<button ion-button color="secondary" clear>Sign in!</button>
+
+</ion-footer>

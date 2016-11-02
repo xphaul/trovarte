@@ -1,78 +1,115 @@
 <ion-header>
+  
   <ion-navbar>
-    <ion-title>Sign Up- Store Owner</ion-title>
+    <ion-title>SignUp Store Owner</ion-title>
   </ion-navbar>
+
 </ion-header>
 
-<ion-content>
-  <ion-list>
-
-<ion-item>
-Proprietor's Information
-</ion-item>
-
-  <ion-item>
-    <ion-label floating>First Name</ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label floating>Last Name</ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label floating>Business Address</ion-label>
-    <ion-input type="address"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label floating>Name of Business</ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label floating>Email Address</ion-label>
-    <ion-input type="email"></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label floating>Business Website</ion-label>
-    <ion-input type="url"></ion-input>
-  </ion-item>
+<ion-content class="login background">
 
 
-  <button light round>Browse</button>
-    <ion-item>
-      <ion-label>Upload the copy of your business permit</ion-label>
+  <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; background-color: white">
+  </div>
+
+  
+  <div style="padding: 30px">
+
+    <!-- Proprietor's Information -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #ggg"><ion-icon name = "ios-person">&nbsp; &nbsp;Proprietor's Information</ion-icon></ion-label>
     </ion-item>
-  <button round>Upload File</button>
 
-  <ion-item>
-    <ion-label floating>Phone Number</ion-label>
-    <ion-input type="number"></ion-input>
-  </ion-item>
+    <!-- First Name -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #9E9E9E"></ion-label>
+        <ion-input type="text" placeholder ="First Name"></ion-input>
+    </ion-item>
 
-  <ion-item>
-    <ion-label floating>Username</ion-label>
-    <ion-input type="text"></ion-input>
-  </ion-item>
+    <!--Last Name -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #9E9E9E"></ion-label>
+        <ion-input type="password" placeholder ="Last Name"></ion-input>
+    </ion-item>
 
-  <ion-item>
-    <ion-label floating>Password</ion-label>
-    <ion-input type="password"></ion-input>
-  </ion-item>
+    <br>
 
-  <ion-item>
-    <ion-label floating>Retype Password</ion-label>
-    <ion-input type="password"></ion-input>
-  </ion-item>
+    <!-- Business Information -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #ggg"><ion-icon name = "ios-briefcase">&nbsp; &nbsp;Business Information</ion-icon></ion-label>
+    </ion-item>
 
-</ion-list>
+    <!--Business Address -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #9E9E9E"></ion-label>
+        <ion-input type="address" placeholder ="Business Address"></ion-input>
+    </ion-item>
+
+    <!--Name of Business -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #9E9E9E"></ion-label>
+        <ion-input type="text" placeholder ="Name of Business"></ion-input>
+    </ion-item>
+
+    <!--Email Address -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #9E9E9E"></ion-label>
+        <ion-input type="email" placeholder ="E-mail Address"></ion-input>
+    </ion-item>
+
+    <!--Business Website -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #9E9E9E"></ion-label>
+        <ion-input type="url" placeholder ="Business Website"></ion-input>
+    </ion-item>
+
+     <!--Phone number -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #9E9E9E"></ion-label>
+        <ion-input type="number" placeholder ="Phone"></ion-input>
+    </ion-item>
+
+    <!-- Browse -->
+    <ion-item>
+      <ion-label style="color: #9E9E9E">* Upload the copy of your business <br> permit.</ion-label>
+    </ion-item>
+    <button light round>Browse</button>
+    <button light round>Upload File</button>
+
+    <br>
+    <br>
+
+    <!-- Account Information -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #ggg"><ion-icon name = "ios-contact">&nbsp; &nbsp;Account Information</ion-icon></ion-label>
+    </ion-item>
+   
+    <!-- Username -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #9E9E9E"></ion-label>
+        <ion-input type="text" placeholder ="Username"></ion-input>
+    </ion-item>
+
+    <!-- Password -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #9E9E9E"></ion-label>
+        <ion-input type="password" placeholder ="Password"></ion-input>
+    </ion-item>
+
+    <!-- Retype Password -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #9E9E9E"></ion-label>
+        <ion-input type="password" placeholder ="Re-Password"></ion-input>
+    </ion-item>
+
+    <button block style="margin-top: 25px; border-radius: 0;">Register</button>
 
 
-  <button full>Register</button>
-
-
-
+  </div>
 </ion-content>
+
+
+<ion-footer>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Trovarte Mobile App<button ion-button color="secondary" clear>Sign in!</button>
+
+</ion-footer>
