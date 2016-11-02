@@ -1,5 +1,5 @@
 <ion-header>
-  
+
   <ion-navbar>
     <ion-title>SignUp Shopper</ion-title>
   </ion-navbar>
@@ -8,13 +8,13 @@
 
 <ion-content class="login background">
 
-  
+
   <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; background-color: white">
   </div>
 
-  
+
   <div style="padding: 30px">
-    
+
     <!-- Basic Information -->
     <ion-item style="padding-left: 0; background: transparent">
         <ion-label style="color: #ggg"><ion-icon name = "ios-person">&nbsp; &nbsp;Basic Information</ion-icon></ion-label>
@@ -27,29 +27,18 @@
         <ion-input type="text" placeholder ="First Name"></ion-input>
     </ion-item>
 
+    <!-- Middle Name -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #9E9E9E"></ion-label>
+        <ion-input type="text" placeholder ="Middle Name"></ion-input>
+    </ion-item>
+
     <!--Last Name -->
     <ion-item style="padding-left: 0; background: transparent">
         <ion-label style="color: #9E9E9E"></ion-label>
         <ion-input type="password" placeholder ="Last Name"></ion-input>
     </ion-item>
 
-    <!--Birthday -->
-    <ion-item style="padding-left: 0; background: transparent">
-        <ion-label style="color: #9E9E9E"></ion-label>
-        <ion-input type="date" placeholder ="Birthday"></ion-input>
-    </ion-item>
-
-    <!-- Gender -->
-    <ion-item style="padding-left: 0; margin-top: 15px; background: transparent">
-        <ion-label style="color: #9E9E9E"></ion-label>
-        <ion-input placeholder ="Gender"></ion-input>
-
-        <ion-select [(ngModel)] = "Type">
-          <ion-option value = "user" style = "color: #9E9E9E">Female</ion-option>
-          <ion-option value="owner" style="color: #9E9E9E">Male</ion-option>
-
-        </ion-select>
-    </ion-item>
 
     <!--Email -->
     <ion-item style="padding-left: 0; background: transparent">
@@ -70,7 +59,7 @@
         <ion-label style="color: #ggg"><ion-icon name = "ios-contact">&nbsp; &nbsp;Account Information</ion-icon></ion-label>
     </ion-item>
 
-   
+
     <!-- Username -->
     <ion-item style="padding-left: 0; background: transparent">
         <ion-label style="color: #9E9E9E"></ion-label>
@@ -89,10 +78,32 @@
         <ion-input type="password" placeholder ="Re-Password"></ion-input>
     </ion-item>
 
-    <button block style="margin-top: 25px; border-radius: 0;">Register</button>
+
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #ggg"><ion-icon name = "thumbs-up">&nbsp; &nbsp;Collecting Personal Information</ion-icon></ion-label>
+    </ion-item>
+
+    <div class="item item-text-wrap">
+
+        1.   We may collect, store and use the following kinds of personal information:
+            (a)   Information about your phone and about your visits to and use of this website (including your IP address, geographical location, platform type and version, operating system, referral source, length of visit, page views and website navigation paths);<br>
+            (b)   information that you provide to us when registering with our website (including your email address);<br>
+            (c)    information that you provide when completing your profile on our website (including your name, profile pictures, gender, date of birth, relationship status, interests and hobbies, educational details and employment details);<br>
+            (d)   information that you provide to us for the purpose of subscribing to our email notifications and/or newsletters (including your name and email address);<br>
+            (e)   information that you provide to us when using the services on our mobile app, or that is generated in the course of the use of those services (including [the timing, frequency and pattern of service use);<br>
+            (f)    any other personal information that you choose to send to us<br>
+            2.  Before you disclose to us the personal information of another person, you must obtain that person's consent to both the disclosure and the processing of that personal information in accordance with this policy.<br>
+
+
+    </div>
+
+
+    <button block style="margin-top: 25px; border-radius: 0;" block (click)="doConfirm()">Register</button>
 
 
   </div>
+
+
 </ion-content>
 
 

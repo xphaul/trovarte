@@ -1,5 +1,5 @@
 <ion-header>
-  
+
   <ion-navbar>
     <ion-title>SignUp Store Owner</ion-title>
   </ion-navbar>
@@ -12,7 +12,7 @@
   <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; background-color: white">
   </div>
 
-  
+
   <div style="padding: 30px">
 
     <!-- Proprietor's Information -->
@@ -24,6 +24,12 @@
     <ion-item style="padding-left: 0; background: transparent">
         <ion-label style="color: #9E9E9E"></ion-label>
         <ion-input type="text" placeholder ="First Name"></ion-input>
+    </ion-item>
+
+    <!-- Middle Name -->
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #9E9E9E"></ion-label>
+        <ion-input type="text" placeholder ="Middle Name"></ion-input>
     </ion-item>
 
     <!--Last Name -->
@@ -71,7 +77,7 @@
 
     <!-- Browse -->
     <ion-item>
-      <ion-label style="color: #9E9E9E">* Upload the copy of your business <br> permit.</ion-label>
+      <ion-label style="color: #9E9E9E">* Upload the copy of your business <br> permit. (Can be JPEG or PDF file. <br> Only limited to 5MB)</ion-label>
     </ion-item>
     <button light round>Browse</button>
     <button light round>Upload File</button>
@@ -79,11 +85,357 @@
     <br>
     <br>
 
+    <!-- Products -->
+
+    <ion-item style="padding-left: 0; background: transparent">
+        <ion-label style="color: #ggg"><ion-icon name = "pricetags">&nbsp; &nbsp;Check The Kinds/Brands of Art <br> Materials That You Are Selling </ion-icon></ion-label>
+    </ion-item>
+
+<ion-list>
+
+  <ion-item>
+    <ion-label>Aqua Flow</ion-label>
+    <ion-checkbox [(ngModel)]="aquaFlow"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Berol</ion-label>
+    <ion-checkbox [(ngModel)]="berol"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>C. Howard Hunt</ion-label>
+    <ion-checkbox [(ngModel)]="CHowardHunt"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Canson</ion-label>
+    <ion-checkbox [(ngModel)]="canson"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Conte</ion-label>
+    <ion-checkbox [(ngModel)]="conte"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Copic</ion-label>
+    <ion-checkbox [(ngModel)]="copic"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Daler-Rowney</ion-label>
+    <ion-checkbox [(ngModel)]="daler-rowney"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Daniel Smith</ion-label>
+    <ion-checkbox [(ngModel)]="danielsmith"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Derwent Cumberland Pencil Company</ion-label>
+    <ion-checkbox [(ngModel)]="dcpc"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Esterbrook</ion-label>
+    <ion-checkbox [(ngModel)]="esterbrook"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Faber-Castell</ion-label>
+    <ion-checkbox [(ngModel)]="faber-castell"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Joseph Gillot's</ion-label>
+    <ion-checkbox [(ngModel)]="josephgillots"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Golden Artist Colors</ion-label>
+    <ion-checkbox [(ngModel)]="gac"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Grumbacher</ion-label>
+    <ion-checkbox [(ngModel)]="grumbacher"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Koh-i-Noor</ion-label>
+    <ion-checkbox [(ngModel)]="koh-i-noor"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Krink</ion-label>
+    <ion-checkbox [(ngModel)]="krink"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Kuretake</ion-label>
+    <ion-checkbox [(ngModel)]="kuretake"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Kyukyodo</ion-label>
+    <ion-checkbox [(ngModel)]="kyukyodo"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Liquitex</ion-label>
+    <ion-checkbox [(ngModel)]="liquitex"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Magna</ion-label>
+    <ion-checkbox [(ngModel)]="magna"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Navarino Icons</ion-label>
+    <ion-checkbox [(ngModel)]="navarinoicons"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Olfa</ion-label>
+    <ion-checkbox [(ngModel)]="olfa"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Pantone Tria Markers</ion-label>
+    <ion-checkbox [(ngModel)]="PantoneTriaMarkers"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Pentel</ion-label>
+    <ion-checkbox [(ngModel)]="pentel"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Perry &amp; Co.</ion-label>
+    <ion-checkbox [(ngModel)]="perryco"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Prisma Color</ion-label>
+    <ion-checkbox [(ngModel)]="prismacolor"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Royal Talens</ion-label>
+    <ion-checkbox [(ngModel)]="royaltalens"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Sakura</ion-label>
+    <ion-checkbox [(ngModel)]="sakura"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Sennelier</ion-label>
+    <ion-checkbox [(ngModel)]="sennelier"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Speedball</ion-label>
+    <ion-checkbox [(ngModel)]="speedball"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Staedtler</ion-label>
+    <ion-checkbox [(ngModel)]="staedtler"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Tombow</ion-label>
+    <ion-checkbox [(ngModel)]="tombow"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Triart Design Marker</ion-label>
+    <ion-checkbox [(ngModel)]="triartdesignmarker"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Utrecht Art Supplies</ion-label>
+    <ion-checkbox [(ngModel)]="utrechtartsupplies"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Viarco</ion-label>
+    <ion-checkbox [(ngModel)]="viarco"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Winsor &amp; Newton </ion-label>
+    <ion-checkbox [(ngModel)]="winsornewton"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>X-Acto</ion-label>
+    <ion-checkbox [(ngModel)]="x-acto"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Acrylic mediums, gesso</ion-label>
+    <ion-checkbox [(ngModel)]="acrylicmediums"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Acrylic Paint</ion-label>
+    <ion-checkbox [(ngModel)]="acrylicpaint"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Adhesives and Glues</ion-label>
+    <ion-checkbox [(ngModel)]="adhesives"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Airbrushes and Airbrush Supplies</ion-label>
+    <ion-checkbox [(ngModel)]="airbrushes"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Art Sets and Art Kits</ion-label>
+    <ion-checkbox [(ngModel)]="artsets"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Brushes</ion-label>
+    <ion-checkbox [(ngModel)]="brushes"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Calligraphy Sets</ion-label>
+    <ion-checkbox [(ngModel)]="calligraphysets"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Canvas, Panels, Surfaces</ion-label>
+    <ion-checkbox [(ngModel)]="canvas"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Easels</ion-label>
+    <ion-checkbox [(ngModel)]="easels"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Encaustic Paints</ion-label>
+    <ion-checkbox [(ngModel)]="encausticpaints"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Fine Pens</ion-label>
+    <ion-checkbox [(ngModel)]="finepens"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Framing Tools and Supplies</ion-label>
+    <ion-checkbox [(ngModel)]="framingtools"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Glass Paint</ion-label>
+    <ion-checkbox [(ngModel)]="glasspaint"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Ink and Pen Refills</ion-label>
+    <ion-checkbox [(ngModel)]="inkpenrefills"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Matboard, Mounting/Foam Board</ion-label>
+    <ion-checkbox [(ngModel)]="matboard"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Oil Paint, Varnish, Mediums</ion-label>
+    <ion-checkbox [(ngModel)]="oilpaint"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Palettes and Painting Accessories</ion-label>
+    <ion-checkbox [(ngModel)]="palettes"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Paper, Pads, Sketchbooks </ion-label>
+    <ion-checkbox [(ngModel)]="paperpad"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Pastel, Chalks, Crayons</ion-label>
+    <ion-checkbox [(ngModel)]="crayons"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Pencil and Colored Pencils</ion-label>
+    <ion-checkbox [(ngModel)]="pencils"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Pens</ion-label>
+    <ion-checkbox [(ngModel)]="pens"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Pigments</ion-label>
+    <ion-checkbox [(ngModel)]="pigments"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Printmaking and Screen Printing</ion-label>
+    <ion-checkbox [(ngModel)]="printmaking"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Scissors, Knives, Cutting Tools</ion-label>
+    <ion-checkbox [(ngModel)]="cuttingtools"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Sculpture and Modelling Supplies</ion-label>
+    <ion-checkbox [(ngModel)]="sculpturesupplies"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Sign paints and pens</ion-label>
+    <ion-checkbox [(ngModel)]="signpaintsandpens"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Tempera and Poster Paint</ion-label>
+    <ion-checkbox [(ngModel)]="posterpaint"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Textile Paint, Dye, Supplies</ion-label>
+    <ion-checkbox [(ngModel)]="textilepaint"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Water Color and Gouache</ion-label>
+    <ion-checkbox [(ngModel)]="watercolor"></ion-checkbox>
+  </ion-item>
+
+  <ion-item style="padding-left: 0; background: transparent">
+      <ion-label style="color: #9E9E9E"></ion-label>
+      <ion-input type="text" placeholder ="Others (Please separate by comma (,))"></ion-input>
+  </ion-item>
+
+
+</ion-list>
+
     <!-- Account Information -->
     <ion-item style="padding-left: 0; background: transparent">
         <ion-label style="color: #ggg"><ion-icon name = "ios-contact">&nbsp; &nbsp;Account Information</ion-icon></ion-label>
     </ion-item>
-   
+
     <!-- Username -->
     <ion-item style="padding-left: 0; background: transparent">
         <ion-label style="color: #9E9E9E"></ion-label>

@@ -9,6 +9,9 @@ import { Page2 } from './pages/page2/page2';
 import { Signup } from './pages/signup/signup';
 import { SignupShopper } from './pages/signupShopper/signupShopper';
 import { SignupStoreOwner } from './pages/signupStoreOwner/signupStoreOwner';
+import { SavedSearches } from './pages/savedSearches/savedSearches';
+
+
 
 @Component({
   templateUrl: 'build/app.html'
@@ -16,8 +19,7 @@ import { SignupStoreOwner } from './pages/signupStoreOwner/signupStoreOwner';
 class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-
-  rootPage: any = Dashboard;
+  rootPage: any = SignupShopper;
 
 
   pages: Array<{title: string, component: any}>;

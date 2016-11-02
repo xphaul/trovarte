@@ -1,5 +1,5 @@
 <ion-header>
-  
+
   <ion-navbar>
     <ion-title>Login</ion-title>
   </ion-navbar>
@@ -14,10 +14,10 @@
 
 <ion-content class="login background">
 
-  
+
   <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; background-color: white">
   </div>
-  
+
   <br>
   <br>
   <br>
@@ -32,9 +32,9 @@
   <br>
   <br>
   <br>
-  
+
   <div style="padding: 30px">
-    
+
     <ion-item style="padding-left: 0; background: transparent">
         <ion-label style="color: #9E9E9E"><ion-icon name = "ios-person"></ion-icon></ion-label>
         <ion-input type="text" placeholder ="Username"></ion-input>
@@ -51,19 +51,21 @@
         <ion-input placeholder ="Type"></ion-input>
 
         <ion-select [(ngModel)] = "Type">
-          <ion-option value = "user" style = "color: #9E9E9E">User</ion-option>
-          <ion-option value="owner" style="color: #9E9E9E">Owner</ion-option>
+          <ion-option value = "User" style = "color: #9E9E9E">User</ion-option>
+          <ion-option value="Store owner" style="color: #9E9E9E">Owner</ion-option>
 
         </ion-select>
 
     </ion-item>
 
-    <button block style="margin-top: 25px; border-radius: 0;">Log in</button>
-      
-      
+    <button block style="margin-top: 25px; border-radius: 0">Log in</button>
+
+    <button block style="margin-top: 25px; border-radius: 0; color: #3b5998">Log in with Facebook</button>
+
+
         <ion-item style="padding-left: 0; background: transparent">
         <ion-label style="color: #9E9E9E"> Don't have an account?<button ion-button color="secondary" inline clear>Register Now!</button></ion-label></ion-item>
-    
+
   </div>
 
 </ion-content>

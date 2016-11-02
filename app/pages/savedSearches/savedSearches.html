@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Shopper</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<div padding>
+  <ion-segment [(ngModel)]="searches">
+    <ion-segment-button value="savedSearches">
+      Saved Searches
+    </ion-segment-button>
+    <ion-segment-button value="recentlyViewed">
+      Recently Viewed Stores
+    </ion-segment-button>
+  </ion-segment>
+</div>
+
+<div [ngSwitch]="searches">
+  <ion-list *ngSwitchCase="'savedSearches'">
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="img/thumbnail-puppy-1.jpg">
+      </ion-thumbnail>
+      <h2>Ruby</h2>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'recentlyViewed'">
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="img/thumbnail-kitten-1.jpg">
+      </ion-thumbnail>
+      <h2>Luna</h2>
+    </ion-item>
+
+  </ion-list>
+</div>
+</ion-content>
