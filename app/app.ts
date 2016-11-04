@@ -19,7 +19,7 @@ import { SavedSearches } from './pages/savedSearches/savedSearches';
 class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = SignupShopper;
+  rootPage: any = Page2;
 
 
   pages: Array<{title: string, component: any}>;
@@ -30,7 +30,8 @@ class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Maps', component: Maps },
-      { title: 'Profile', component: Page2 }
+      { title: 'Profile', component: Page2 },
+      { title: 'Searches', component: SavedSearches }
     ];
 
   }
