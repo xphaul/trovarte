@@ -1,12 +1,17 @@
 <ion-header>
-  
+
   <ion-navbar>
-    
+
     <button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
 
     <ion-title>Maps</ion-title>
+
+    <ion-buttons end>
+      <button ion-button (click)="addMarker()"><ion-icon name="add"></ion-icon>Add Marker</button>
+    </ion-buttons>
+
   </ion-navbar>
 
 </ion-header>
@@ -17,7 +22,7 @@
 
    <div #map id="map">
    </div>
-   
+
    <ion-searchbar style="position: absolute; top: 200px">
    </ion-searchbar>
 
